@@ -39,8 +39,6 @@ provider "kubernetes" {
   version                = "~> 1.11"
 }
 
-data "aws_availability_zones" "available" {
-}
 
 locals {
   cluster_name = "test-eks-${random_string.suffix.result}"
