@@ -23,7 +23,7 @@ variable "map_roles" {
 
   default = [
     {
-      rolearn  = "arn:aws:iam::581341661765:role/role1"
+      rolearn  = "arn:aws:iam::581341661765:role/EKSIAMRole"
       username = "mchak"
       groups   = ["system:Admin_GRP"]
     },
