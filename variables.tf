@@ -7,7 +7,9 @@ variable "map_accounts" {
   type        = list(string)
 
   default = [
+
     "581341661765"
+
   ]
 }
 
@@ -38,11 +40,12 @@ variable "map_users" {
 
   default = [
     {
-      userarn  = "arn:aws:iam::581341661765:user/user1"
-      username = "user1"
+      userarn  = "arn:aws:iam::581341661765:user/mchak"
+      username = "mchak"
       groups   = ["system:masters"]
     },
     {
+
       userarn  = "arn:aws:iam::581341661765:user/user2"
       username = "user2"
       groups   = ["system:masters"]
