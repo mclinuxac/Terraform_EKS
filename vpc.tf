@@ -53,13 +53,3 @@ resource "aws_route_table_association" "demo" {
   route_table_id = aws_route_table.demo.id
 }
 
-resource "aws_flow_log" "demo" {
-  log_destination      = aws_s3_bucket.demo.arn
-  log_destination_type = "s3"
-  traffic_type         = "ALL"
-  vpc_id               = aws_vpc.demo.id
-}
-
-resource "aws_s3_bucket" "demo" {
-  bucket = "demo-fugue-opa-0123"
-}
